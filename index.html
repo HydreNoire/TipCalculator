@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style/main.css">
+
+  <title>Frontend Mentor | Tip calculator app</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+
+<body>
+
+  <main>
+    <img src="images/logo.svg" alt="">
+
+    <form class="box">
+      <div class="left">
+        <div class="input-util">
+          <label for="bill">Bill</label>
+          <input type="number" name="bill" id="bill" value="">
+        </div>
+
+        <div class="select-tip">
+          <h3>Select Tip %</h3>
+          <div class="up">
+            <input type="button" class="btnTips tip" value="5%">
+            <input type="button" class="btnTips tip" value="10%">
+            <input type="button" class="btnTips tip" value="15%">
+          </div>
+          <div class="bottom">
+            <input type="button" class="btnTips tip" value="25%">
+            <input type="button" class="btnTips tip" value="50%">
+            <input type="text" name="tip-custom" class="btnTips" id="custom" placeholder="Custom" value="">
+          </div>
+        </div>
+
+        <div class="input-util">
+          <label for="people">Number of People</label>
+          <input type="number" name="people" id="people" value="">
+        </div>
+      </div>
+
+      <div class="right">
+        <div class="tip-amount">
+          <div class="title">
+            <h2>Tip Amount</h2>
+            <p>/ person</p>
+          </div>
+          <p>$<span class="tipNB"></span></p>
+        </div>
+
+        <div class="total">
+          <div class="title">
+            <h2>Total</h2>
+            <p>/ person</p>
+          </div>
+          <p>$<span class="totalNB"></span></p>
+        </div>
+
+        <button class="reset">Reset</button>
+      </div>
+    </form>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="https://github.com/HydreNoire?tab=repositories">Hydre</a>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
